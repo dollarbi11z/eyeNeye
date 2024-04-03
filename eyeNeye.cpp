@@ -112,7 +112,7 @@ const std::string& eyeNeye::GetVariableValue( const std::string& section, const 
 	{
 		if( _iniFile->mapSections.at( section ).mapVariables.count( var ) != 0 )
 		{
-			Log_Info( std::format( "Retrieved Variable: {}, value: {}", var, section ));
+			Log_Info( std::format( "Retrieved Variable: {}", var ));
 			return _iniFile->mapSections.at( section ).mapVariables.at( var );
 		}
 		else
